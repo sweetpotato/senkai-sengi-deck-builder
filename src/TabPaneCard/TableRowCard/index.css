@@ -1,0 +1,41 @@
+/* SPDX-License-Identifier: MIT */
+
+/* カードリストの背景色付け */
+.table > :not(caption) > * > .bg-ijinden-red { --bs-table-bg-state: #f1aeb5; } /* red-200 */
+.table-hover > tbody > tr:hover > .bg-ijinden-red { --bs-table-bg-state: #e35d6a; } /* red-400 */
+.table > :not(caption) > * > .bg-ijinden-blue { --bs-table-bg-state: #9ec5fe; } /* blue-200 */
+.table-hover > tbody > tr:hover > .bg-ijinden-blue { --bs-table-bg-state: #3d8bfd; } /* blue-400 */
+.table > :not(caption) > * > .bg-ijinden-green { --bs-table-bg-state: #a3cfbb; } /* green-200 */
+.table-hover > tbody > tr:hover > .bg-ijinden-green { --bs-table-bg-state: #479f76; } /* green-400 */
+
+/* 多色 */
+.table > :not(caption) > * > .bg-ijinden-red-blue {
+  --bs-table-color-state: initial;
+  --bs-table-bg-state: initial;
+  background: linear-gradient(to bottom right, #f1aeb5 50%, #9ec5fe 50%);
+}
+.table-hover > tbody > tr:hover > .bg-ijinden-red-blue {
+  --bs-table-color-state: initial;
+  --bs-table-bg-state: initial;
+  background: linear-gradient(to bottom right, #e35d6a 50%, #3d8bfd 50%);
+}
+.table > :not(caption) > * > .bg-ijinden-blue-green {
+  --bs-table-color-state: initial;
+  --bs-table-bg-state: initial;
+  background: linear-gradient(to bottom right, #9ec5fe 50%, #a3cfbb 50%);
+}
+.table-hover > tbody > tr:hover > .bg-ijinden-blue-green {
+  --bs-table-color-state: initial;
+  --bs-table-bg-state: initial;
+  background: linear-gradient(to bottom right, #3d8bfd 50%, #479f76 50%);
+}
+.table > :not(caption) > * > .bg-ijinden-green-red {
+  --bs-table-color-state: initial;
+  --bs-table-bg-state: initial;
+  background: linear-gradient(to bottom right, #a3cfbb 50%, #f1aeb5 50%);
+}
+.table-hover > tbody > tr:hover > .bg-ijinden-green-yellow {
+  --bs-table-color-state: initial;
+  --bs-table-bg-state: initial;
+  background: linear-gradient(to bottom right, #479f76 50%, #e35d6a 50%);
+}

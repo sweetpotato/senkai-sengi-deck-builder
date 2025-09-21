@@ -1,0 +1,45 @@
+/* SPDX-License-Identifier: MIT */
+
+.btn-toggled {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 80px;
+  height: 112px;
+  border-radius: 0;
+}
+
+.btn-toggled, .btn-toggled:hover, :not(.btn-check) + .btn-toggled:active {
+  border-color: transparent;
+}
+
+.btn-toggled-opaque, .btn-toggled-opaque:hover, :not(.btn-check) + .btn-toggled-opaque:active {
+  background-color: rgba(128, 128, 128, 1.0);
+}
+
+.btn-toggled-transparent, .btn-toggled-transparent:hover, :not(.btn-check) + .btn-toggled-transparent:active {
+  background-color: rgba(255, 255, 255, 0.0);
+}
+
+.btn-toggled-red, .btn-toggled-red:hover, :not(.btn-check) + .btn-toggled-red:active {
+  background-color: rgba(220, 53, 69, 0.7);
+}
+
+.btn-toggled-blue, .btn-toggled-blue:hover, :not(.btn-check) + .btn-toggled-blue:active {
+  background-color: rgba(13, 110, 253, 0.7);
+}
+
+.btn-toggled-yellow, .btn-toggled-yellow:hover, :not(.btn-check) + .btn-toggled-yellow:active {
+  background-color: rgba(255, 193, 7, 0.7);
+}
+
+.btn-toggled-white, .btn-toggled-white:hover, :not(.btn-check) + .btn-toggled-white:active {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.btn-toggled-black, .btn-toggled-black:hover, :not(.btn-check) + .btn-toggled-black:active {
+  background-color: rgba(0, 0, 0, 0.7);
+}
