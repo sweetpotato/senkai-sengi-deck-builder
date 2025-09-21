@@ -34,7 +34,7 @@
   --bs-table-bg-state: initial;
   background: linear-gradient(to bottom right, #a3cfbb 50%, #f1aeb5 50%);
 }
-.table-hover > tbody > tr:hover > .bg-ijinden-green-yellow {
+.table-hover > tbody > tr:hover > .bg-ijinden-green-red {
   --bs-table-color-state: initial;
   --bs-table-bg-state: initial;
   background: linear-gradient(to bottom right, #479f76 50%, #e35d6a 50%);
