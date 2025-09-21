@@ -136,7 +136,6 @@ function TabPaneDeck({
         dispatchIncrement={dispatchDeck.incrementSide}
         zoomIn={zoomIn}
         interruptSimulator={interruptSimulator}
-        isSide
       />
       <h2 className="m-2">レシピを共有</h2>
       <ContainerDeckShare deckMain={deckMain} deckSide={deckSide} />
@@ -156,7 +155,6 @@ function SectionPart({
   dispatchIncrement,
   zoomIn,
   interruptSimulator,
-  isSide = false,
 }) {
   const idTitle = useId()
   const numCards = sum(deck.values())
@@ -189,7 +187,6 @@ function SectionPart({
               dispatchIncrement={dispatchIncrement}
               zoomIn={zoomIn}
               interruptSimulator={interruptSimulator}
-              isSide={isSide}
             />
           </li>
         ))}
@@ -207,7 +204,6 @@ const ImageCardDeck = memo(function ImageCardDeck({
   dispatchIncrement,
   zoomIn,
   interruptSimulator,
-  isSide = false,
 }) {
   function handleClickMinus() {
     dispatchDecrement(id)
