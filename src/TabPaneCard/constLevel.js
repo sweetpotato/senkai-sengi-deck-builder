@@ -2,7 +2,7 @@
 
 const constLevel = {
   MIN: 0,
-  MAX: 8,
+  MAX: 10,
 }
 
 export default constLevel
