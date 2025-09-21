@@ -174,7 +174,7 @@ const AccordionItemTypeFilter = memo(function AccordionItemTypeFilter({
             AP{ap}
           </div>
           <FormRange
-            min={0}
+            min={100}
             max={1000}
             step={100}
             value={ap}
@@ -229,7 +229,7 @@ const AccordionItemTypeFilter = memo(function AccordionItemTypeFilter({
             HP{hp}
           </div>
           <FormRange
-            min={0}
+            min={100}
             max={1000}
             step={100}
             value={hp}

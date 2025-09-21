@@ -7,8 +7,8 @@ import AccordionItemTypeFilter from './AccordionItemTypeFilter'
 
 function useAccordionItemTypeFilter() {
   const [type, setType] = useState(0)
-  const [ap, setAp] = useState(0)
-  const [hp, setHp] = useState(0)
+  const [ap, setAp] = useState(100)
+  const [hp, setHp] = useState(100)
   const [comparatorAp, setComparatorAp] = useState(enumComparator.GE)
   const [comparatorHp, setComparatorHp] = useState(enumComparator.GE)
   // See AccordionItemGenericFilter

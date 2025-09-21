@@ -80,6 +80,11 @@ function TabPaneCard({
   }
 
   function filterCard(card) {
+    // レベルの概念がない魔力カードはレベル1と見なす
+    if (card.level === null) {
+      card.level = 1
+    }
+
     const apMatched =
       comparatorAp === enumComparator.GE
         ? card.ap >= ap
@@ -151,8 +156,7 @@ function TabPaneCard({
           <tr>
             <th scope="col">ID</th>
             <th scope="col">カード名</th>
-            <th scope="col">メイン</th>
-            <th scope="col">魔力</th>
+            <th scope="col">デッキ</th>
           </tr>
         </thead>
         <tbody>

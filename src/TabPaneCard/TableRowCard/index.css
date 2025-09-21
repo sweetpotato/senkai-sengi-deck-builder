@@ -7,6 +7,8 @@
 .table-hover > tbody > tr:hover > .bg-ijinden-blue { --bs-table-bg-state: #3d8bfd; } /* blue-400 */
 .table > :not(caption) > * > .bg-ijinden-green { --bs-table-bg-state: #a3cfbb; } /* green-200 */
 .table-hover > tbody > tr:hover > .bg-ijinden-green { --bs-table-bg-state: #479f76; } /* green-400 */
+.table > :not(caption) > * > .bg-ijinden-maryoku { --bs-table-bg-state: #dee2e6; } /* gray-300 */
+.table-hover > tbody > tr:hover > .bg-ijinden-maryoku { --bs-table-bg-state: #adb5bd; } /* gray-500 */
 
 /* 多色 */
 .table > :not(caption) > * > .bg-ijinden-red-blue {

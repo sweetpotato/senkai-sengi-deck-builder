@@ -91,12 +91,6 @@ function TabPaneSimulator({ deckMain, deckSide, state, dispatch }) {
       {showBoard && (
         <>
           <SectionPart
-            title="魔力ゾーン"
-            cards={manaAndSide}
-            defaultNumTransparent={0}
-            continueSimulator={dispatch.continue}
-          />
-          <SectionPart
             title="ウォール"
             cards={walls}
             defaultNumTransparent={0}
@@ -106,6 +100,12 @@ function TabPaneSimulator({ deckMain, deckSide, state, dispatch }) {
             title="手札"
             cards={handAndMain}
             defaultNumTransparent={4}
+            continueSimulator={dispatch.continue}
+          />
+          <SectionPart
+            title="魔力ゾーン"
+            cards={manaAndSide}
+            defaultNumTransparent={0}
             continueSimulator={dispatch.continue}
           />
         </>

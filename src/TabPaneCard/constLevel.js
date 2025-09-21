@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 
 const constLevel = {
-  MIN: 0,
+  MIN: 1,
   MAX: 10,
 }
 

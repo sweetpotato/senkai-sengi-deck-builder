@@ -35,6 +35,10 @@ const TableRowCard = memo(function TableRowCard({
     dataColorsToCss.map((e) => e.color === color && e.css)
   )
   const isMaryoku = type === enumType.MARYOKU
+  const classesMaryoku = classNames({
+    'bg-ijinden-non-maryoku': isMaryoku,
+    'bg-ijinden-maryoku': isMaryoku,
+  })
 
   return (
     /*
@@ -47,7 +51,7 @@ const TableRowCard = memo(function TableRowCard({
       <td className={classesColor} id={rowId}>
         {id}
       </td>
-      <td>
+      <td className={classesMaryoku}>
         <Button
           variant="secondary-outline"
           size="sm"
@@ -58,8 +62,8 @@ const TableRowCard = memo(function TableRowCard({
         </Button>
         {displayName}
       </td>
-      <td>
-        {!isMaryoku && (
+      <td className={classesMaryoku}>
+        {!isMaryoku ? (
           <InputGroupCounter
             id={id}
             counter={counterMain}
@@ -67,10 +71,7 @@ const TableRowCard = memo(function TableRowCard({
             dispatchIncrement={dispatchDeck.incrementMain}
             interruptSimulator={interruptSimulator}
           />
-        )}
-      </td>
-      <td>
-        {isMaryoku && (
+        ) : (
           <InputGroupCounter
             id={id}
             counter={counterSide}

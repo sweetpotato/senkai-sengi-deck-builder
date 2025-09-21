@@ -31,7 +31,7 @@ const AccordionItemLevelFilter = memo(function AccordionItemLevelFilter({
       : comparator === enumComparator.LE
       ? `${level}以下`
       : `${level}に等しい`
-  const enphasized = level !== 0 || comparator != enumComparator.GE
+  const enphasized = level !== constLevel.MIN || comparator != enumComparator.GE
 
   return (
     <AccordionItem
