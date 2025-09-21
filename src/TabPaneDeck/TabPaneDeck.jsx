@@ -211,16 +211,12 @@ const ImageCardDeck = memo(function ImageCardDeck({
 }) {
   function handleClickMinus() {
     dispatchDecrement(id)
-    if (!isSide) {
-      interruptSimulator()
-    }
+    interruptSimulator()
   }
 
   function handleClickPlus() {
     dispatchIncrement(id)
-    if (!isSide) {
-      interruptSimulator()
-    }
+    interruptSimulator()
   }
 
   function handleClickZoom() {

@@ -76,6 +76,8 @@ const TableRowCard = memo(function TableRowCard({
             counter={counterSide}
             dispatchDecrement={dispatchDeck.decrementSide}
             dispatchIncrement={dispatchDeck.incrementSide}
+            interruptSimulator={interruptSimulator}
+            isSide
           />
         )}
       </td>

@@ -7,7 +7,8 @@ function InputGroupCounter({
   counter,
   dispatchDecrement,
   dispatchIncrement,
-  interruptSimulator = undefined,
+  interruptSimulator,
+  isSide = false,
 }) {
   function handleClickMinus() {
     dispatchDecrement(id)
@@ -19,7 +20,7 @@ function InputGroupCounter({
     interruptSimulator?.()
   }
 
-  const name = (interruptSimulator !== undefined ? 'main-' : 'side-') + id
+  const name = (isSide ? 'main-' : 'side-') + id
   return (
     <InputGroup>
       <Button
